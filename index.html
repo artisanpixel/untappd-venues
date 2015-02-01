@@ -24,7 +24,7 @@
     <div class="user cf">
       <img ng-src="{{item.user.user_avatar}}" alt="User Profile" class="user-img">
       <h2 class="user-name">{{item.user.user_name}}</h2>
-      <small class="date">{{item.created_at | date:'short'}}</small>
+      <small class="date">{{item.created_at | limitTo:16}}</small>
     </div>
 
     <div class="beer">
